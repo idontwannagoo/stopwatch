@@ -2,8 +2,8 @@ import time
 import keyboard
 import pygame
 import pyperclip
-pyperclip.copy('python main12.py')
-pygame.mixer.init()
+
+# pygame.mixer.init()
 
 
 
@@ -33,8 +33,8 @@ start_time = time.time()
 total_start_time = time.time()
 print('开始')
 times = 1
-pygame.mixer.music.load('E:\\Noame\\飞机上广播的提示音_耳聆网_[声音ID：12956].wav')
-pygame.mixer.music.play()
+# pygame.mixer.music.load('E:\\Noame\\飞机上广播的提示音_耳聆网_[声音ID：12956].wav')
+# pygame.mixer.music.play()
 
 while True:
     # if rest_homework == 0:
@@ -79,8 +79,8 @@ while True:
         ta = time.time()  # 初始化开始时间
 
         if t > 0.01:  # 防止一直按住空格的误会
-            pygame.mixer.music.load('E:\\Noame\\飞机上广播的提示音_耳聆网_[声音ID：12956].wav')
-            pygame.mixer.music.play()
+            # pygame.mixer.music.load('E:\\Noame\\飞机上广播的提示音_耳聆网_[声音ID：12956].wav')
+            # pygame.mixer.music.play()
             with open('%s.txt' % filename, 'a') as f_obj:
                 f_obj.write(message + "\n")
             start_time = time.time()
